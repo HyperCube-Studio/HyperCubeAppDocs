@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Periodic App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .lang-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .lang-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .lang-btn.active {
+            background: white;
+            color: #667eea;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        strong {
+            color: #667eea;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 25px 20px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🩷 Periodic</h1>
+            <p>Privacy Policy / Gizlilik Politikası</p>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('tr')">Türkçe</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- English Version -->
+            <div id="lang-en" class="lang-content active">
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> February 25, 2026
+                </div>
+
+                <h2>Privacy Policy</h2>
+
+                <h3>1. Overview</h3>
+                <p>Periodic is a mobile application that helps you manage your menstrual cycle tracking locally on your device. Your privacy is important to us. This app <strong>does not send any data to cloud servers</strong>.</p>
+
+                <h3>2. Data Collected</h3>
+                <p>The app stores the following data <strong>only on your device</strong>:</p>
+                <ul>
+                    <li><strong>Health Data:</strong> Menstrual cycle records (start/end dates)</li>
+                    <li><strong>Personal Information:</strong> User name (optional)</li>
+                    <li><strong>App Preferences:</strong> Language selection, notification settings</li>
+                </ul>
+
+                <h3>3. Purpose of Data Use</h3>
+                <ul>
+                    <li>Track and predict your menstrual cycle</li>
+                    <li>Provide personalized health suggestions</li>
+                    <li>Schedule notifications (if you grant permission)</li>
+                </ul>
+
+                <h3>4. Data Sharing</h3>
+                <p><strong>Your data is not shared with any third parties.</strong> All data remains on your device.</p>
+
+                <h3>5. Data Security</h3>
+                <ul>
+                    <li>All data is stored with encrypted storage (Hive) on your device</li>
+                    <li>Internet connection is only used to fetch health tips (optional)</li>
+                    <li>No data transmission occurs</li>
+                </ul>
+
+                <h3>6. Data Export and Import</h3>
+                <ul>
+                    <li><strong>Export:</strong> You can export your data as a local JSON file</li>
+                    <li><strong>Import:</strong> You can restore previously exported data</li>
+                    <li>These operations are controlled solely by you; no internet connection required</li>
+                </ul>
+
+                <h3>7. Data Deletion</h3>
+                <p>You can permanently delete all your data via Settings > Reset All Data. This action is irreversible.</p>
+
+                <h3>8. Disclaimer</h3>
+                <div class="highlight">
+                    <p><strong>This app is for informational purposes only and does not replace medical advice.</strong> Please consult a healthcare professional for any health concerns.</p>
+                </div>
+
+                <h3>9. Contact</h3>
+                <p>For questions: <a href="mailto:privacy@periodic-app.example.com">privacy@periodic-app.example.com</a></p>
+            </div>
+
+            <!-- Turkish Version -->
+            <div id="lang-tr" class="lang-content">
+                <div class="last-updated">
+                    <strong>Son Güncelleme:</strong> 25 Şubat 2026
+                </div>
+
+                <h2>Gizlilik Politikası</h2>
+
+                <h3>1. Genel Bakış</h3>
+                <p>Periodic, regl döngüsü takibinizi yerel olarak cihazınızda yönetmenize yardımcı olan bir mobil uygulamadır. Gizliliğiniz bizim için önemlidir. Bu uygulama <strong>hiçbir veriyi bulut sunucularına göndermez</strong>.</p>
+
+                <h3>2. Toplanan Veriler</h3>
+                <p>Uygulama aşağıdaki verileri <strong>yalnızca cihazınızda</strong> saklar:</p>
+                <ul>
+                    <li><strong>Sağlık Verisi:</strong> Regl döngüsü kayıtları (başlangıç/bitiş tarihleri)</li>
+                    <li><strong>Kişisel Bilgi:</strong> Kullanıcı adı (opsiyonel)</li>
+                    <li><strong>Uygulama Tercihleri:</strong> Dil seçimi, bildirim ayarları</li>
+                </ul>
+
+                <h3>3. Verilerin Kullanım Amacı</h3>
+                <ul>
+                    <li>Regl döngünüzü takip etmek ve tahmin yapmak</li>
+                    <li>Size kişiselleştirilmiş sağlık önerileri sunmak</li>
+                    <li>Bildirimleri planlamak (izin vermeniz durumunda)</li>
+                </ul>
+
+                <h3>4. Veri Paylaşımı</h3>
+                <p><strong>Verileriniz hiçbir üçüncü tarafla paylaşılmaz.</strong> Tüm veriler cihazınızda kalır.</p>
+
+                <h3>5. Veri Güvenliği</h3>
+                <ul>
+                    <li>Tüm veriler cihazınızda şifreli depolama (Hive) ile saklanır</li>
+                    <li>İnternet bağlantısı yalnızca sağlık önerilerini almak için kullanılır (isteğe bağlı)</li>
+                    <li>Veri aktarımı yapılmaz</li>
+                </ul>
+
+                <h3>6. Veri İhracı ve İçe Aktarımı</h3>
+                <ul>
+                    <li><strong>Dışa Aktarma:</strong> Verilerinizi JSON formatında yerel dosya olarak dışa aktarabilirsiniz</li>
+                    <li><strong>İçe Aktarma:</strong> Daha önce dışa aktardığınız verileri geri yükleyebilirsiniz</li>
+                    <li>Bu işlemler yalnızca siz kontrol edersiniz; internet bağlantısı gerektirmez</li>
+                </ul>
+
+                <h3>7. Veri Silme</h3>
+                <p>Ayarlar > Tüm Verileri Sıfırla seçeneğiyle tüm verilerinizi kalıcı olarak silebilirsiniz. Bu işlem geri alınamaz.</p>
+
+                <h3>8. Yasal Uyarı</h3>
+                <div class="highlight">
+                    <p><strong>Bu uygulama bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez.</strong> Sağlık sorunlarınız için mutlaka bir sağlık uzmanına danışın.</p>
+                </div>
+
+                <h3>9. İletişim</h3>
+                <p>Sorularınız için: <a href="mailto:privacy@periodic-app.example.com">privacy@periodic-app.example.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Periodic App. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">This privacy policy applies to version 1.1.0 and later.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all language contents
+            document.querySelectorAll('.lang-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Remove active state from all buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected language
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Activate button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
