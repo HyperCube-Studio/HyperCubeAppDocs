@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Gravon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .lang-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .lang-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .lang-btn.active {
+            background: white;
+            color: #0d1b2a;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .lang-content {
+            display: none;
+        }
+        
+        .lang-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #1b2838;
+        }
+        
+        h2 {
+            color: #0d1b2a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #1b2838;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1b2838;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin: 15px 0 15px 25px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        strong {
+            color: #0d1b2a;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        a {
+            color: #1b2838;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 25px 20px;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Gravon</h1>
+            <p>Privacy Policy / Gizlilik Politikası</p>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('tr')">Türkçe</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- English Version -->
+            <div id="lang-en" class="lang-content active">
+                <div class="last-updated">
+                    <strong>Last Updated:</strong> April 9, 2026
+                </div>
+
+                <h2>Privacy Policy</h2>
+
+                <h3>1. Overview</h3>
+                <p>Gravon is a space lander game developed by HyperCube Studio. This privacy policy explains how we handle your information when you use the app.</p>
+
+                <h3>2. Data Collected</h3>
+                <p>Gravon stores the following data <strong>only on your device</strong>:</p>
+                <ul>
+                    <li><strong>Game Progress:</strong> Level scores, completed levels, and unlocked content</li>
+                    <li><strong>App Preferences:</strong> Language selection, sound/music settings</li>
+                </ul>
+                <p>This data is stored locally using SharedPreferences and is <strong>never transmitted to any server</strong>.</p>
+
+                <h3>3. Advertising</h3>
+                <p>Gravon uses <strong>Google AdMob</strong> to display advertisements (rewarded and interstitial ads). Google AdMob may collect the following information:</p>
+                <ul>
+                    <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers</li>
+                    <li><strong>Advertising ID:</strong> Android Advertising ID for personalized ads</li>
+                    <li><strong>Usage Data:</strong> Ad interaction data (impressions, clicks)</li>
+                    <li><strong>IP Address:</strong> Used to estimate general location (country/region level)</li>
+                </ul>
+                <p>For more information about how Google handles your data, please refer to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+                <h3>4. Third-Party Services</h3>
+                <ul>
+                    <li><strong>Google AdMob:</strong> Advertising services — <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+                    <li><strong>Google Play Services:</strong> App distribution and in-app updates — <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+                </ul>
+
+                <h3>5. Data Sharing</h3>
+                <p>We do not collect, store, or share any personal data on our servers. The only data shared with third parties is through the advertising SDK (Google AdMob) as described above.</p>
+
+                <h3>6. Children's Privacy</h3>
+                <p>Gravon is not specifically directed at children under the age of 13. We do not knowingly collect personal information from children. The ads shown are managed by Google AdMob according to its own policies.</p>
+
+                <h3>7. Data Deletion</h3>
+                <p>Since all game data is stored locally on your device, you can delete all data by:</p>
+                <ul>
+                    <li>Clearing the app data from your device settings</li>
+                    <li>Uninstalling the application</li>
+                </ul>
+
+                <h3>8. Internet Permission</h3>
+                <p>The app requires internet access solely for:</p>
+                <ul>
+                    <li>Loading and displaying advertisements</li>
+                    <li>Checking for app updates via Google Play</li>
+                </ul>
+
+                <h3>9. Changes to This Policy</h3>
+                <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+
+                <h3>10. Contact</h3>
+                <p>For questions or concerns about this privacy policy, please contact us at: <a href="mailto:hypercubestudioo@gmail.com">hypercubestudioo@gmail.com</a></p>
+            </div>
+
+            <!-- Turkish Version -->
+            <div id="lang-tr" class="lang-content">
+                <div class="last-updated">
+                    <strong>Son Güncelleme:</strong> 9 Nisan 2026
+                </div>
+
+                <h2>Gizlilik Politikası</h2>
+
+                <h3>1. Genel Bakış</h3>
+                <p>Gravon, HyperCube Studio tarafından geliştirilen bir uzay iniş oyunudur. Bu gizlilik politikası, uygulamayı kullanırken bilgilerinizin nasıl işlendiğini açıklar.</p>
+
+                <h3>2. Toplanan Veriler</h3>
+                <p>Gravon aşağıdaki verileri <strong>yalnızca cihazınızda</strong> saklar:</p>
+                <ul>
+                    <li><strong>Oyun İlerlemesi:</strong> Seviye puanları, tamamlanan seviyeler ve açılan içerikler</li>
+                    <li><strong>Uygulama Tercihleri:</strong> Dil seçimi, ses/müzik ayarları</li>
+                </ul>
+                <p>Bu veriler SharedPreferences kullanılarak yerel olarak saklanır ve <strong>hiçbir sunucuya iletilmez</strong>.</p>
+
+                <h3>3. Reklamlar</h3>
+                <p>Gravon, reklam göstermek için <strong>Google AdMob</strong> kullanır (ödüllü ve geçiş reklamları). Google AdMob aşağıdaki bilgileri toplayabilir:</p>
+                <ul>
+                    <li><strong>Cihaz Bilgileri:</strong> Cihaz modeli, işletim sistemi sürümü, benzersiz cihaz tanımlayıcıları</li>
+                    <li><strong>Reklam Kimliği:</strong> Kişiselleştirilmiş reklamlar için Android Reklam Kimliği</li>
+                    <li><strong>Kullanım Verileri:</strong> Reklam etkileşim verileri (gösterimler, tıklamalar)</li>
+                    <li><strong>IP Adresi:</strong> Genel konum tahmini için kullanılır (ülke/bölge düzeyinde)</li>
+                </ul>
+                <p>Google'ın verilerinizi nasıl işlediği hakkında daha fazla bilgi için <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası</a>'na bakınız.</p>
+
+                <h3>4. Üçüncü Taraf Hizmetler</h3>
+                <ul>
+                    <li><strong>Google AdMob:</strong> Reklam hizmetleri — <a href="https://policies.google.com/privacy" target="_blank">Gizlilik Politikası</a></li>
+                    <li><strong>Google Play Hizmetleri:</strong> Uygulama dağıtımı ve uygulama içi güncellemeler — <a href="https://policies.google.com/privacy" target="_blank">Gizlilik Politikası</a></li>
+                </ul>
+
+                <h3>5. Veri Paylaşımı</h3>
+                <p>Sunucularımızda herhangi bir kişisel veri toplamıyor, saklamıyor veya paylaşmıyoruz. Üçüncü taraflarla paylaşılan tek veri, yukarıda açıklanan reklam SDK'sı (Google AdMob) aracılığıyla gerçekleşir.</p>
+
+                <h3>6. Çocukların Gizliliği</h3>
+                <p>Gravon özellikle 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamıyoruz. Gösterilen reklamlar, Google AdMob tarafından kendi politikalarına göre yönetilmektedir.</p>
+
+                <h3>7. Veri Silme</h3>
+                <p>Tüm oyun verileri cihazınızda yerel olarak saklandığından, tüm verileri şu şekillerde silebilirsiniz:</p>
+                <ul>
+                    <li>Cihaz ayarlarından uygulama verilerini temizleyerek</li>
+                    <li>Uygulamayı kaldırarak</li>
+                </ul>
+
+                <h3>8. İnternet İzni</h3>
+                <p>Uygulama yalnızca şu amaçlarla internet erişimi gerektirir:</p>
+                <ul>
+                    <li>Reklamların yüklenmesi ve gösterilmesi</li>
+                    <li>Google Play üzerinden uygulama güncellemelerinin kontrol edilmesi</li>
+                </ul>
+
+                <h3>9. Politika Değişiklikleri</h3>
+                <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Herhangi bir değişiklik, güncellenmiş tarih ile birlikte bu sayfada yayınlanacaktır.</p>
+
+                <h3>10. İletişim</h3>
+                <p>Bu gizlilik politikasıyla ilgili sorularınız için bizimle iletişime geçin: <a href="mailto:hypercubestudioo@gmail.com">hypercubestudioo@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 HyperCube Studio. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
